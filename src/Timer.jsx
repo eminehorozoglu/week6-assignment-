@@ -1,6 +1,7 @@
 import { useEffect , useState } from "react";
 import { data } from "./data";
-import "./App.css";
+import "./Timer.css";
+import logo from './cookie.jpg'
 
 
 
@@ -44,21 +45,21 @@ return (
     <p className="my-cookie">My Cookies: {count}</p>
     <div className="cookie-show">
     <p className="cps">CPS :{cps} </p>
-
-    <button className="cookie-buy-button" onClick={()=>{setcount(() => {return count + cps });}}>Buy Cookie</button>
-    <button className="reset-button" onClick={clearcookie}>reset</button>
+    <img src={logo} alt="Logo" className="cookie-buy-button" onClick={()=>{setcount(() => {return count + cps });}}/>
+    <button className="resetbutton" onClick={clearcookie}>Reset</button>
     </div>
  
-    
+    <center>
     {data.map((item)=> 
     
-      
-      <div className="cookie" key = {item.id}>
+   
+      <div className="cookie"  key = {item.id}>
      <h4 >{item.name}</h4> 
-     <p>{item.increase}</p>
-     <p> {item.cost}</p>
+     <p>{item.increase} Cps</p>
+     <p> {item.cost} £</p>
      <button className="buybutton" onClick={()=> {if(count<item.cost){
-             alert("Not enough money!");
+            alert("Not enough money!");
+
      } else if (count>= item.cost){
         setcps(() => {return cps + item.increase });
         setcount(() => {return count - item.cost });}}}>Buy</button>
@@ -68,6 +69,7 @@ return (
     ) 
   }
 
+</center>
   </div>
 );
 }
