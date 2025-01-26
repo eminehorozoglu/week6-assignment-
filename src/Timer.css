@@ -12,6 +12,7 @@ body{
     background-color:#e98009;
     border-radius: 15px;
     width: 600px;
+    padding: 5px;
 
   }
 
@@ -47,6 +48,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
     
   
   }
@@ -54,9 +56,11 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 50px;
+    font-size: 80px;
     color: #740b32;
+    padding: 20px;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+    
   
   }
   
@@ -65,9 +69,8 @@ body{
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 40px;
+      font-size: 50px;
       color: #740b32;
-      flex-wrap: wrap;
       font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
     
     
@@ -123,7 +126,7 @@ body{
         font-size: 1em;
         flex-wrap: wrap;
         border-radius: 15px;
-        width: 400px;
+        width: 350px;
       }
       
     

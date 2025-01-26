@@ -2,6 +2,7 @@ import { useEffect , useState } from "react";
 import { data } from "./data";
 import "./Timer.css";
 import logo from './cookie.jpg'
+import Data from "./Data";
 
 
 
@@ -42,7 +43,7 @@ function clearcookie(){
 return (
   <div>
   
-    <p className="my-cookie">My Cookies: {count}</p>
+    <p className="my-cookie">{count}</p>
     <div className="cookie-show">
     <p className="cps">CPS :{cps} </p>
     <img src={logo} alt="Logo" className="cookie-buy-button" onClick={()=>{setcount(() => {return count + cps });}}/>

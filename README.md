@@ -1,8 +1,8 @@
 Project name: Cookie Clicker Game
 
-Render link: 
+Render link: [Render link](https://week6-assignment-zewk.onrender.com) https://week6-assignment-zewk.onrender.com
 
-Repo link: [Repo Link](https://github.com/eminehorozoglu/week6-assignment-)
+Repo link: [Repo Link](https://github.com/eminehorozoglu/week6-assignment-) https://github.com/eminehorozoglu/week6-assignment-
 
 Project description:
 
